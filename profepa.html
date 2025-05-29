@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - PROFEPA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@keyframes progreso-erroresCalculo {
+    0% { width: 0%; }
+    100% { width: 87.5%; }
+}
+@keyframes progreso-cargaLaboral {
+    0% { width: 0%;}
+    100% {width: 50%;}
+}
+@keyframes progreso-cifrasNomina {
+    0% {width: 0%;}
+    100% { width: 87.5%;}
+}
+.errores-calculo {
+    animation: progreso-erroresCalculo 1.5s ease-in-out forwards;
+}
+.carga-laboral{
+    animation: progreso-cargaLaboral 1.5s ease-in-out forwards;
+}
+.cifras-nomina{
+    animation: progreso-cifrasNomina 1.5s ease-in-out forwards;
+}
+
+</style>
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -25,8 +50,8 @@
                 <li class="bg-gray-200 p-4 rounded-lg">
                     <h3 class="font-bold text-gray-800">Desarrollo de sistemas en la Subdirección de Movimientos de Personal y Nómina</h3>
                     <p class="text-gray-600">Era el encargado de crear aplicaciones que eran requeridas en la subdirección y que el sistema de nómina Meta4 no tenía, también tenía la tarea de dar mantenimiento a nivel de código a Meta4 por los errores que se generaban al momento de operar.</p>
-                    <p class="text-gray-600">Entre los sistemas que desarrollé están: <br/>
-                        <ul>
+                    <h4 class="font-semibold text-gray-700">Entre los sistemas que desarrollé están: </h4>
+                        <ul class="list-disc pl-5 text-gray-600">
                             <li>Juegos nacionales: Sistema basado en C# que llevaba el control de ingresos y egresos que se les brindan a las Personas Servidoras Públicas que participan en tornes de los Juegos Nacionales de la SEMARNAT.</li>
                             <li>Control de cheques: Sistema basado en C# que llevaba el control de los cheques generados para conocer el estatus y llevar el control de los mismos.</li>
                             <li>RUSP: Sistema basado en C# que genera los registros para reportarse a la Secretaría Anticorrupción y Buen Gobierno.</li>
@@ -41,18 +66,38 @@
                     <h3 class="font-bold text-gray-800">Jefatura de departamento de nómina</h3>
                     <p class="text-gray-600">Estuve a cargo del equipo de la subdirección de movimientos de personal y nómina coordinando y gestionando las operaciones diarias, con el objetivo de sistematizar procesos y reducir errores en el cálculo de la nómina.</p>
                     <p class="text-gray-600">Logré reducir los errores durante el proceso del cálculo de la nómina, la carga laboral al equipo de nómina también se redujo, con cada cambio de gestión y cambios en las solicitudes de inforamción, se podía cumplir con los tiempos de entrega gracias a las herramientas que han sido implementadas.</p>
-                    
+                    <br/>
+                    <h4 class="font-semibold text-gray-700">Indicadores</h4>
+                    <br/>
+                    <p>Reducción de errores al calcular la nómina</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <!-- <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000 ease-in-out text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 87.5%;"> -->
+                            <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none errores-calculo">87.5%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">Con el uso de las herramientas desarrolladas e implementadas, la validación y corrección de errores fue más rápida. Anteriormente el tiempo era de hasta 3 días, se logró reducir hasta a medio día.</blockquote>
+                    <p>Reducción de carga laboral al equipo</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none carga-laboral">50%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">Usando metodologías de trabajo como SCRUM o POMODORO, el flujo de trabajo en la subdirección fue muy eficiente, tomando como base la participación del equipo y el enfoque en resultados.</blockquote>
+                    <p>Reducción de tiempo en la elaboración de las cifras nominales</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none cifras-nomina">87.5%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">El tiempo de la elaboración era de hasta 1 día en una nómina ordinaria, se redujo hasta hacerlas en 1 hora, una vez terminando el cálculo de nómina.</blockquote>
                 </li>
             </ul>
+            <p><br/><a href="index.html" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Regresar a la página principal</a>
         </div>
 
         <!-- Contacto -->
         <div class="mt-6 text-center">
             <h2 class="text-2xl font-semibold text-gray-700">Contacto</h2>
             <div class="flex justify-center space-x-4 mt-2">
-                <a href="https://linkedin.com/in/tu-perfil" class="text-blue-600">LinkedIn</a>
-                <a href="https://github.com/tuusuario" class="text-gray-800">GitHub</a>
-                <a href="mailto:tucorreo@example.com" class="text-red-600">Correo</a>
+                <a href="https://linkedin.com/in/erick-segundo/" class="text-blue-600" target="_blank">LinkedIn</a>
+                <a href="https://github.com/hserick" class="text-gray-800" target="_blank">GitHub</a>
+                <a href="mailto:hserick@hotmail.com" class="text-red-600" target="_blank">Correo</a>
+                <a href="https://wa.me/5255427555274/" class="text-green-600" target="_blank">Whatsapp</a>
             </div>
         </div>
 
