@@ -1,93 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Erick</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Erick</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.random-rain span {
+  position: absolute;
+  font-family: monospace;
+  font-size: 1rem;
+  color: rgba(107, 114, 128, 0.4); /* gris suave */
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+</style>
+
+
 </head>
+
 <body class="bg-gray-100 font-sans">
+    <!--Encabezado-->
+<div class="overflow-x-auto w-full">
+  <div class="max-w-5xl mx-auto grid grid-cols-3 bg-white rounded-lg shadow-lg overflow-hidden relative">
 
-    <!-- Contenedor principal -->
-    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8 mt-10">
+    <!-- Columna izquierda: Foto -->
+    <div class="md:col-span-1 relative flex items-right justify-right bg-white overflow-hidden min-h-[300px]">
+      <img src="perfil.jpg" alt="Foto de Erick" class="h-[300px] rounded-lg shadow-2xl object-contain z-10 relative" />
+    </div>
 
-        <!-- Encabezado -->
-        <div class="text-center">
-            <img src="perfil.jpg" alt="Foto de Erick" class="w-32 h-32 mx-auto rounded-full border-4 border-gray-300">
-            <h1 class="text-4xl font-bold text-gray-800 mt-4">Erick René Martínez Segundo</h1>
-            <p class="text-lg text-gray-600">Ingeniero en Desarrollo de Software</p>
+    <!-- Columna derecha: Contenido + efecto -->
+    <div class="col-span-2 p-6 flex flex-col space-y-6 relative bg-white pb-24 z-10">
+
+<!-- Lluvia aleatoria de ceros y unos -->
+<div class="random-rain w-full h-full absolute inset-0 z-0">
+  <!-- Genera varios span aleatoriamente -->
+  <span style="left:5%;  animation-duration: 8s; animation-delay: 0s;">0</span>
+  <span style="left:15%; animation-duration: 10s; animation-delay: 2s;">1</span>
+  <span style="left:30%; animation-duration: 7s; animation-delay: 4s;">0</span>
+  <span style="left:45%; animation-duration: 12s; animation-delay: 1s;">1</span>
+  <span style="left:60%; animation-duration: 9s; animation-delay: 3s;">1</span>
+  <span style="left:75%; animation-duration: 11s; animation-delay: 0.5s;">0</span>
+  <span style="left:90%; animation-duration: 13s; animation-delay: 1.5s;">1</span>
+
+  <span style="left:4%;  animation-duration: 8s; animation-delay: 0s;">0</span>
+  <span style="left:11%; animation-duration: 5s; animation-delay: 2s;">1</span>
+  <span style="left:20%; animation-duration: 7s; animation-delay: 4s;">0</span>
+  <span style="left:35%; animation-duration: 4s; animation-delay: 1s;">1</span>
+  <span style="left:50%; animation-duration: 9s; animation-delay: 3s;">1</span>
+  <span style="left:85%; animation-duration: 10s; animation-delay: 0.5s;">0</span>
+  <span style="left:95%; animation-duration: 15s; animation-delay: 1.5s;">1</span>
+
+  <span style="left:5%;  animation-duration: 8s; animation-delay: 0s;">0</span>
+  <span style="left:15%; animation-duration: 10s; animation-delay: 2s;">1</span>
+  <span style="left:30%; animation-duration: 7s; animation-delay: 4s;">0</span>
+  <span style="left:45%; animation-duration: 12s; animation-delay: 1s;">1</span>
+  <span style="left:60%; animation-duration: 9s; animation-delay: 3s;">1</span>
+  <span style="left:75%; animation-duration: 11s; animation-delay: 0.5s;">0</span>
+  <span style="left:90%; animation-duration: 13s; animation-delay: 1.5s;">1</span>
+</div>
+
+
+
+      <!-- Nombre y título -->
+      <div class="relative text-center z-10">
+        <div class="border-2 border-blue-600 p-6 bg-white bg-opacity-90 backdrop-blur-sm">
+          <h1 class="md:text-3xl font-bold text-gray-800">Erick René Martínez Segundo</h1>
         </div>
+        <p class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white md:px-3 text-sm text-blue-600 font-medium">
+          Ingeniero en Desarrollo de Software
+        </p>
+      </div>
 
-        <!-- Perfil Profesional -->
-        <div class="mt-6">
-            <h2 class="text-2xl font-semibold text-gray-700">Perfil Profesional</h2>
-            <p class="text-gray-600 mt-2">
-                Desarrollador con experiencia en tecnologías web y soluciones eficientes.
-            </p>
-        </div>
+      <!-- Redes sociales -->
+      <div class="md:pt-12 flex justify-center space-x-6 text-gray-700 text-xl z-10">
+        <a href="https://linkedin.com/in/erick-segundo/" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/hserick" target="_blank" class="hover:text-gray-800 transition"><i class="fab fa-github"></i></a>
+        <a href="mailto:hserick@hotmail.com" target="_blank" class="hover:text-red-600 transition"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/525542755274/" target="_blank" class="hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
 
-        <!-- Experiencia Laboral -->
-        <div class="mt-6">
-            <h2 class="text-2xl font-semibold text-gray-700">Experiencia Laboral</h2>
-            <ul class="mt-2 space-y-4">
-                <li class="bg-gray-200 p-4 rounded-lg">
-                    <h3 class="font-bold text-gray-800">Diseños florales Murdel S.A. de C.V.</h3>
-                    <p class="text-gray-600">Auxiliar y desarrollador de teconologías de la información| 2006 - 2014</p>
-                    <p class="text-gray-500">Desarrollo e implementación de un ERP que ayudo a mejorar el control de inventarios, creación de catálogos de venta, cotizaciones para eventos de gran magnitud, seguimiento de pedidos, por mencionar algunos.</p>
-                    <p><br/><a href="murdel.html" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Ver más detalles...</a></p>
-                </li>
-                <li class="bg-gray-200 p-4 rounded-lg">
-                    <h3 class="font-bold text-gray-800">Procuraduría Federal de Protección al Ambiente</h3>
-                    <p class="text-gray-600">Ingeniero Backend y jefe de departamento de la subdirección de nómina | 2015 - 2025</p>
-                    <p class="text-gray-500">Desarrollo de aplicaciones de escritorio y web, así como administrador de la base de datos y el sistema de nómina Meta4.</p>
-                    <p><br/><a href="profepa.html" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Ver más detalles...</a>
-                </li>
-            </ul>
-            
-        </div>
+    <!-- Texto descriptivo inferior -->
+    <div class="absolute bottom-0 left-0 w-full z-20">
+      <div class="bg-sky-600 bg-opacity-80 text-white px-6 md:py-4 text-justify rounded-t-lg">
+        <p>
+          Desarrollador orientado a resultados con experiencia en aplicaciones web, automatización de procesos y liderazgo de equipos técnicos. Enfocado en eficiencia, optimización y soluciones reales.
+        </p>
+      </div>
+    </div>
 
-        <!-- Habilidades -->
-        <div class="mt-6">
+  </div>
+</div>
+<!-- Fin de encabezado -->
+
+<!-- Contenido -->
+
+<!-- Contenedor general debajo del encabezado -->
+<section class="max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+
+  <!-- Columna izquierda: dos filas -->
+  <div class="md:col-span-1 flex flex-col space-y-4">
+
+    <!-- Fila 1: Imagen superior -->
+    <div class="w-full">
+      <img src="img/Inicio/bannerIzquierdo.png" alt="Imagen informativa" class="rounded-lg shadow-md object-cover h-52 w-full">
+    </div>
+
+    <!-- Fila 2: Texto complementario -->
+    <div class="bg-white rounded-lg p-4 shadow-md text-gray-700 text-justify">
+      <h2 class="text-xl font-semibold text-blue-600 mb-2">Bienvenido a mi portafolio</h2>
+      <p>
+        Aquí encontrarás información sobre mi trayectoria como desarrollador, mis intereses, metas y algunos proyectos destacados. Explora las secciones a la derecha para conocer más sobre mí.
+      </p>
+    </div>
+
+    <!-- Fila 3: Imagen inferior -->
+    <div class="w-full">
+      <img src="img/Inicio/bannerIzquierdo2.png" alt="Imagen informativa" class="rounded-lg shadow-md object-cover h-full w-full">
+    </div>
+
+    <div class="mt-6">
             <h2 class="text-2xl font-semibold text-gray-700">Habilidades Técnicas</h2>
             <div class="flex space-x-4 mt-2">
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">JavaScript</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">React</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">Node.js</span>
+            </div>
+            <div class="flex space-x-4 mt-2">
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">PHP</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">C#</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">SQL Server</span>
-                <span class="px-4 py-2 bg-gray-300 rounded-lg">.NET</span>
             </div>
             <div class="flex space-x-4 mt-2">
+                <span class="px-4 py-2 bg-gray-300 rounded-lg">.NET</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">MySQL</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">PostgreSQL</span>
+            </div>
+            <div class="flex space-x-4 mt-2">
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">Java</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">Agentes IA</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">VBA</span>
-                <span class="px-4 py-2 bg-gray-300 rounded-lg">Meta4</span>
             </div>
             <div class="flex space-x-4 mt-2">
+                <span class="px-4 py-2 bg-gray-300 rounded-lg">Meta4</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">Trabajo en equipo</span>
                 <span class="px-4 py-2 bg-gray-300 rounded-lg">Inglés intermedio</span>
-                <span class="px-4 py-2 bg-gray-300 rounded-lg">Análisis de datos</span>
-                <span class="px-4 py-2 bg-gray-300 rounded-lg">Auditorías</span>
-                <span class="px-4 py-2 bg-gray-300 rounded-lg">Anexos técnicos para contratos de productos o servicios</span>
-                
             </div>
         </div>
 
-        <!-- Contacto -->
-        <div class="mt-6 text-center">
-            <h2 class="text-2xl font-semibold text-gray-700">Contacto</h2>
-            <div class="flex justify-center space-x-4 mt-2">
-                <a href="https://linkedin.com/in/erick-segundo/" class="text-blue-600" target="_blank">LinkedIn</a>
-                <a href="https://github.com/hserick" class="text-gray-800" target="_blank">GitHub</a>
-                <a href="mailto:hserick@hotmail.com" class="text-red-600" target="_blank">Correo</a>
-                <a href="https://wa.me/525542755274/" class="text-green-600" target="_blank">Whatsapp</a>
-            </div>
-        </div>
+  </div>
 
+  <!-- Columna derecha: Listado de secciones -->
+  <div class="md:col-span-2 space-y-4">
+
+    <!-- Ítem 1 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/perfilProfesional.png" alt="Perfil profesional" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Perfil profesional</h3>
+        <p class="text-gray-600 text-sm">Desarrollador de software con enfoque en la creación de interfaces limpias, funcionales y visualmente atractivas. Combino precisión técnica con creatividad visual, priorizando la accesibilidad, la experiencia del usuario y la adaptabilidad entre dispositivos. Especializado en desarrollo web, aplicaciones de escritorio y administración de bases de datos, mantengo una atención constante al detalle y lo visual.</p>
+        <a href="perfilProfesional.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
     </div>
 
+    <!-- Ítem 2 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/experienciaLaboral.jpg" alt="Experiencia laboral" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Experiencia laboral</h3>
+        <p class="text-gray-600 text-sm">Experiencia desarrollando soluciones digitales centradas en la eficiencia y el diseño responsivo. He implementado sistemas personalizados, portafolios interactivos y efectos visuales escalables para diversas plataformas. Destaco por mi capacidad para traducir ideas en experiencias funcionales, optimizadas y estéticamente balanceadas, manteniendo un flujo de trabajo iterativo basado en retroalimentación constante.</p>
+        <a href="experiencia.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
+    </div>
+
+    <!-- Ítem 3 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/estudios.jpg" alt="Estudios" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Estudios</h3>
+        <p class="text-gray-600 text-sm">Formación académica especializada en desarrollo de software, combinando teoría sólida con experiencia práctica. He cursado programas orientados a programación, diseño web y arquitectura de sistemas, manteniéndome actualizado en tecnologías clave como HTML, CSS, JavaScript, PHP, Phyton, Java, Node.js, C#, MongoDB y herramientas modernas de desarrollo frontend y backend.</p>
+        <a href="estudios.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
+    </div>
+
+    <!-- Ítem 4 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/logros.jpg" alt="Logros" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Logros</h3>
+        <p class="text-gray-600 text-sm">Implementación exitosa de efectos visuales y experiencias interactivas en proyectos web. Optimización del rendimiento y accesibilidad en sitios responsivos. Reconocimiento por mantener altos estándares de calidad y detalle, además de mejorar la experiencia de usuario en distintos dispositivos.</p>
+        <a href="logros.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
+    </div>
+
+    <!-- Ítem 5 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/proyectos.png" alt="Proyectos" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Proyectos</h3>
+        <p class="text-gray-600 text-sm">Desarrollo de portafolios profesionales, sitios de presentación, aplicaciones administrativas y componentes visuales animados utilizando TailwindCSS, HTML y efectos personalizados. Cada proyecto busca equilibrar funcionalidad, estética y rendimiento, integrando elementos como tarjetas informativas, animaciones suaves y layouts flexibles.</p>
+        <a href="proyectos.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
+    </div>
+
+    <!-- Ítem 6 -->
+    <div class="flex bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img src="img/ImagenesMenu/metas.jpg" alt="Metas" class="h-32 w-32 object-cover">
+      <div class="p-4 flex flex-col justify-between">
+        <h3 class="text-lg font-bold text-gray-800">Metas</h3>
+        <p class="text-gray-600 text-sm">Seguir perfeccionando mis habilidades en desarrollo de aplicaciones de escritorio y diseño web implementando las nuevas teconlogías, incluyendo la IA, explorando nuevas técnicas de animación y herramientas modernas de desarrollo. Consolidar un portafolio profesional pulido, estructurado y visualmente impactante que represente mi evolución como desarrollador y mi capacidad para abordar proyectos creativos y técnicos con excelencia.</p>
+        <a href="metas.html" class="text-blue-600 text-sm font-semibold hover:underline">Ver sección →</a>
+      </div>
+    </div>
+    <!-- Agrega otros ítems similares para Estudios, Logros, Proyectos, Metas... -->
+  </div>
+
+</section>
+
+
+<!-- Fin contenido-->
 </body>
 </html>

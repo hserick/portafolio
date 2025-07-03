@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sección - CV Erick</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+@keyframes progreso-erroresCalculo {
+    0% { width: 0%; }
+    100% { width: 87.5%; }
+}
+@keyframes progreso-cargaLaboral {
+    0% { width: 0%;}
+    100% {width: 50%;}
+}
+@keyframes progreso-cifrasNomina {
+    0% {width: 0%;}
+    100% { width: 87.5%;}
+}
+.errores-calculo {
+    animation: progreso-erroresCalculo 1.5s ease-in-out forwards;
+}
+.carga-laboral{
+    animation: progreso-cargaLaboral 1.5s ease-in-out forwards;
+}
+.cifras-nomina{
+    animation: progreso-cifrasNomina 1.5s ease-in-out forwards;
+}
+
+</style>
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Encabezado -->
+  <div class="max-w-5xl mx-auto mt-10 grid grid-cols-3 gap-4 bg-white rounded-lg shadow-lg overflow-hidden">
+    
+    <!-- Columna Izquierda: Foto, nombre, título -->
+    <div class="relative flex flex-col items-center justify-end p-4 bg-white">
+      <img src="perfil.jpg" alt="Foto de Erick" class="h-[250px] object-contain rounded-lg shadow-lg mb-2" />
+      <div class="text-center">
+        <h1 class="text-xl font-bold text-gray-800">Erick René Martínez Segundo</h1>
+        <p class="text-sm text-blue-600">Ingeniero en Desarrollo de Software</p>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Título de la sección -->
+    <div class="col-span-2 flex items-center justify-center px-6 bg-gray-600">
+        <h2 class="text-4xl font-bold text-white shadow-md drop-shadow-md tracking-wide py-6 text-center">
+            Experiencia laboral
+        </h2>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="max-w-5xl mx-auto mt-6 grid grid-cols-3 gap-4 bg-white p-6 rounded-lg shadow-md">
+
+    <!-- Columna Izquierda: Imagen + Navegación lateral -->
+    <div class="col-span-1 flex flex-col space-y-4">
+      
+      <!-- Imagen temática -->
+      <img src="img/ImagenesMenu/experienciaLaboral.jpg" alt="Imagen" class="rounded-lg shadow-md object-cover w-full h-52">
+
+      <!-- Menú lateral -->
+      <nav class="bg-gray-100 rounded-lg p-4 shadow-inner space-y-2 text-sm">
+        <a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium">🏠 Inicio</a>
+        <a href="perfilProfesional.html" class="block text-gray-700 hover:text-blue-600 font-medium">🧑 Perfil profesional</a>
+        <a href="experiencia.html" class="block text-gray-700 hover:text-blue-600 font-medium">💼 Experiencia laboral</a>
+        <a href="estudios.html" class="block text-gray-700 hover:text-blue-600 font-medium">🎓 Estudios</a>
+        <a href="logros.html" class="block text-gray-700 hover:text-blue-600 font-medium">🏆 Logros</a>
+        <a href="proyectos.html" class="block text-gray-700 hover:text-blue-600 font-medium">🛠️ Proyectos</a>
+        <a href="metas.html" class="block text-gray-700 hover:text-blue-600 font-medium">🚀 Metas</a>
+      </nav>
+    </div>
+
+    <!-- Columna Derecha: Contenido textual -->
+    <div class="col-span-2">
+      <!-- Murdel -->
+        <div class="mt-6">
+            <h2 class="text-2xl font-semibold text-gray-700">Diseños florales Murdel S.A. de C.V.</h2>
+            <ul class="mt-2 space-y-4">
+                <li class="bg-gray-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-gray-800">Auxiliar en Tecnologías de la información</h3>
+                    <p class="text-gray-600">Apoyaba en la implementación de equipos de cómputo, impresoras, accesorios como lectores de códigos de barra, instalación y configuración de redes y también tenía funciones de soporte técnico en las herramientas tecnológicas que se llegarán a implementar como suites ofimáticas, software de diseño gráfico, por mencionar algunos.</p>
+                </li>
+                <li class="bg-gray-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-gray-800">Desarrollo de software</h3>
+                    <p class="text-gray-600">Desarrollé un sistema informático similar a un ERP, a la medida de las necesidades de la empresa, con esta herramienta se capturaba la materia prima para la operación diaria, se registraban los costos, los productos, su caducidad, las fechas de compra, los responsables de la compra, entre otros datos.</p>
+                    <p class="text-gray-600">Constaba de varios módulos dedicados para registrar las ventas, crear el catálogo de arreglos florales a vender en base a los productos usados en cada arreglo, con esto se facilitaba la elaboración de la lista de compras, cuando surgían eventos de gran magnitud se podía obtener una cotización de manera rápida, así como sugerencia de disponibilidad de flores acorde a la temporada.</p>
+                    <p class="text-gray-600">Con la información registrada se realizaban análisis de los productos más vendidos y los costos de la materia prima por período de tiempo.</p>
+                    <p class="text-gray-600">Este sistema se configuró para trabajar en red y así todos en la empresa con autorización, pudieran revisar o capturar información de acuerdo a su rol y en tiempo real.</p>
+                </li>
+            </ul>
+            
+        </div>
+        <br />
+        <hr />
+
+        <!-- PROFEPA -->
+         <div class="mt-6">
+            <h2 class="text-2xl font-semibold text-gray-700">Procuraduría Federal de Protección al Ambiente</h2>
+            <ul class="mt-2 space-y-4">
+                <li class="bg-gray-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-gray-800">Desarrollo de sistemas en la Subdirección de Movimientos de Personal y Nómina</h3>
+                    <p class="text-gray-600">Era el encargado de crear aplicaciones que eran requeridas en la subdirección y que el sistema de nómina Meta4 no tenía, también tenía la tarea de dar mantenimiento a nivel de código a Meta4 por los errores que se generaban al momento de operar.</p>
+                    <h4 class="font-semibold text-gray-700">Entre los sistemas que desarrollé están: </h4>
+                        <ul class="list-disc pl-5 text-gray-600">
+                            <li>Juegos nacionales: Sistema basado en C# que llevaba el control de ingresos y egresos que se les brindan a las Personas Servidoras Públicas que participan en tornes de los Juegos Nacionales de la SEMARNAT.</li>
+                            <li>Control de cheques: Sistema basado en C# que llevaba el control de los cheques generados para conocer el estatus y llevar el control de los mismos.</li>
+                            <li>RUSP: Sistema basado en C# que genera los registros para reportarse a la Secretaría Anticorrupción y Buen Gobierno.</li>
+                            <li>Visor de timbres: Sistema web basado en PHP dónde las Personas Servidoras Públicas podrían visualizar sus comprobantes de pago en caso de que no les llegará por correo, también podrían descargar un resumen de las percepciones y deducciones acumuladas por ejercicio fiscal.</li>
+                            <li>Ficha laboral: Sistema web basado en PHP que generaba el historial laboral en la PROFEPA por empleado, con la opción para descargar en Excel.</li>
+                            <li>Reporte nóminas: Sistema web basado en PHP que generaba los registros acorde a las nóminas seleccionadas.</li>
+                            <li>Módulos de apoyo: Sistemas web o aplicaciones de escritorio basados en C#, PHP, Java, Javascript, Meta4, que apoyaban con la generación de reportes solicitados a la subdirección de nómina.</li>
+                        </ul> 
+                </li>
+                <li class="bg-gray-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-gray-800">Jefatura de departamento de nómina</h3>
+                    <p class="text-gray-600">Estuve a cargo del equipo de la subdirección de movimientos de personal y nómina coordinando y gestionando las operaciones diarias, con el objetivo de sistematizar procesos y reducir errores en el cálculo de la nómina.</p>
+                    <p class="text-gray-600">Logré reducir los errores durante el proceso del cálculo de la nómina, la carga laboral en el área de nómina también se redujo, con cada cambio de gestión y cambios en las solicitudes de información, se podía cumplir con los tiempos de entrega gracias a las herramientas que han sido implementadas.</p>
+                    <br/>
+                    <h4 class="font-semibold text-gray-700">Indicadores</h4>
+                    <br/>
+                    <p>Reducción de errores al calcular la nómina</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <!-- <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000 ease-in-out text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 87.5%;"> -->
+                            <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none errores-calculo">87.5%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">Con el uso de las herramientas desarrolladas e implementadas, la validación y corrección de errores fue más rápida. Anteriormente el tiempo era de hasta 3 días, se logró reducir hasta a medio día.</blockquote>
+                    <p>Reducción de carga laboral al equipo</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none carga-laboral">50%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">Usando metodologías de trabajo como SCRUM o POMODORO, el flujo de trabajo en la subdirección fue muy eficiente, tomando como base la participación del equipo y el enfoque en resultados.</blockquote>
+                    <p>Reducción de tiempo en la elaboración de las cifras nominales</p>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full text-xs font-medium text-white text-center p-0.5 leading-none cifras-nomina">87.5%</div>
+                    </div>
+                    <blockquote class="p-4 border-l-4 border-blue-500 bg-blue-100 text-blue-700 italic">El tiempo de la elaboración era de hasta 1 día en una nómina ordinaria, se redujo hasta hacerlas en 1 hora, una vez terminando el cálculo de nómina.</blockquote>
+                </li>
+                <li class="bg-gray-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-gray-800">Dirección de Desarrollo Tecnológico</h3>
+                    <p class="text-gray-600">Estuve como encargado tres meses para apoyar en procesos de contratación de productos y servicios participando en la elaboración de los anexos técnicos para la contratación de servicios en la nube.</p>
+                    <p class="text-gray-600">Di seguimiento a problemas que se reportaban de sistemas informáticos públicos dónde personal externo a la PROFEPA no podía ingresar, visualizar o capturar su información, implemente ambientes de desarrollo para analizar más a fondo los sistemas.</p>
+                    <p class="text-gray-600">Di atención a las solicitudes diarias que llegaban para responder oficios de petición de información, análisis de datos, corrección de errores, entre otros.</p>
+                </li>
+            </ul>            
+        </div>
+        <br />
+        <hr />
+        
+    </div>
+  </div>
+
+</body>
+</html>
+
